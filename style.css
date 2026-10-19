@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.hero .btn {
+    background: white;
+    color: #1d4ed8;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.feedback-section {
+    max-width: 600px;
+    margin: 45px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px #00000012;
+}
+
+.feedback-section h2,
+.about h2 {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font: inherit;
+}
+
+form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+form .btn {
+    width: 100%;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #172554;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .feedback-section {
+        margin: 25px 15px;
+        padding: 22px;
+    }
+}

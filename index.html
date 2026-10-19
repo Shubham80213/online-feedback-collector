@@ -1,0 +1,68 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Collector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Feedback Collector</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#feedback">Give Feedback</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Your Feedback Matters!</h1>
+        <p>Help us improve by sharing your valuable feedback.</p>
+        <a href="#feedback" class="btn">Give Feedback</a>
+    </section>
+
+    <section class="feedback-section" id="feedback">
+        <h2>Share Your Feedback</h2>
+
+        <form id="feedbackForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="rating">Rating</label>
+            <select id="rating" required>
+                <option value="">Select rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+
+            <label for="comments">Your Comments</label>
+            <textarea id="comments" placeholder="Write your feedback..." required></textarea>
+
+            <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Our Project</h2>
+        <p>A simple platform to collect and manage user feedback.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Feedback Collector | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```

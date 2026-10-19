@@ -1,0 +1,7 @@
+
+node_modules/
+backend/node_modules/
+backend/feedback.db
+backend/feedback.db-shm
+backend/feedback.db-wal
+.env
